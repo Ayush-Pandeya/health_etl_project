@@ -1,0 +1,23 @@
+{
+  "eventType": "COMPLETE",
+  "eventTime": "2025-07-08T04:40:09.581879Z",
+  "run": {
+    "runId": "fbcfed08-7bcd-4335-ba1d-88b9d00b7805"
+  },
+  "job": {
+    "name": "health_etl_save_parquet",
+    "namespace": "local.health_etl"
+  },
+  "inputs": [
+    {
+      "namespace": "local",
+      "name": "data/transformed_data.csv"
+    }
+  ],
+  "outputs": [
+    {
+      "namespace": "local",
+      "name": "data/final_data.parquet"
+    }
+  ]
+}

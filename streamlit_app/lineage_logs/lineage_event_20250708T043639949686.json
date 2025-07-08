@@ -1,0 +1,23 @@
+{
+  "eventType": "COMPLETE",
+  "eventTime": "2025-07-08T04:36:39.945960Z",
+  "run": {
+    "runId": "9e8ccc37-3b13-4ee6-8634-3e6aefe2aea6"
+  },
+  "job": {
+    "name": "health_etl_validate",
+    "namespace": "local.health_etl"
+  },
+  "inputs": [
+    {
+      "namespace": "local",
+      "name": "data/transformed_data.csv"
+    }
+  ],
+  "outputs": [
+    {
+      "namespace": "local",
+      "name": "data/transformed_data.csv"
+    }
+  ]
+}

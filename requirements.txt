@@ -1,0 +1,9 @@
+apache-airflow==2.7.3
+openlineage-airflow
+pandas
+pyarrow
+boto3
+streamlit
+flask
+python-dotenv
+pytest
