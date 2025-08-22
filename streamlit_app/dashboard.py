@@ -26,10 +26,10 @@ def display_file_preview(title, file_path):
         st.warning(f"{file_path} not found.")
 
 def main():
-    st.title("📊 HealthETL Lineage & Data Dashboard")
+    st.title(" HealthETL Lineage & Data Dashboard")
 
     # Lineage Section
-    st.header("🔁 Lineage Events")
+    st.header("Lineage Events")
     events = load_lineage_events()
     st.write(f"Total lineage events: `{len(events)}`")
 
@@ -38,7 +38,7 @@ def main():
         st.code(json.dumps(event, indent=2), language="json")
 
     # Data Preview Section
-    st.header("📂 ETL Data Samples")
+    st.header(" ETL Data Samples")
     display_file_preview("1. Raw Extracted Data", os.path.join(DATA_DIR, "raw_data.csv"))
     display_file_preview("2. Transformed Data", os.path.join(DATA_DIR, "transformed_data.csv"))
     display_file_preview("3. Final Parquet Data", os.path.join(DATA_DIR, "final_data.parquet"))
